@@ -1,2 +1,11 @@
-@import "_variables" .nav-center {
+@import "_variables";
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.nav-center {
+  ul {
+    @extend %flexCenter;
+  }
 }
