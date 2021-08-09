@@ -25,3 +25,10 @@ boxEls.forEach((boxEl, index) => {
 });
 
 boxEl.innerText = "box~";
+
+// Method chaining
+
+const a = "123894567";
+const b = a.split("").sort().reverse();
+
+console.log(a, b);
