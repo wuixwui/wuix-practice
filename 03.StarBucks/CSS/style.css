@@ -604,3 +604,24 @@ header .badges .badge {
   top: 0;
   right: 0;
 }
+
+/* Pick your favorite */
+.pick-your-favorite {
+  background: url("../images/favorite_bg.jpg") no-repeat center / cover fixed;
+}
+.pick-your-favorite .inner {
+  padding: 110px 0;
+}
+.pick-your-favorite .inner .text-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 362px;
+  margin-left: 100px;
+}
+.pick-your-favorite .inner .text-group .title {
+  margin-bottom: 40px;
+}
+.pick-your-favorite .inner .text-group .description {
+  margin-bottom: 40px;
+}
