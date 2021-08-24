@@ -1,28 +1,266 @@
-@charset 'utf-8';
-/* 웹폰트 설정 */
+@charset "utf-8";
 
-/* reset */
-body {
-    font:normal 16px 'Roboto', sans-serif;
-	line-height:1.3;
-	color:#666666;
-	background-color:#fff;
-	margin:0;
-	padding:0;
+/* COMMON */
+* > body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ededed;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 1.172;
 }
-h1, h2, h3, h4, h5, h6 {font-size:1em;}
-h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
-	margin:0;
-	padding:0;
-	/* box-sizing: border-box; */
+img {
+  display: block;
 }
-li {list-style:none;}
-a {text-decoration:none;}
+/* card body */
+.card {
+  overflow: hidden;
+  width: 280px;
+  height: fit-content;
+  margin: 16px 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.card > img {
+  width: 280px;
+}
+/* post font */
+.post--title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.post--author {
+  font-size: 14px;
+  color: #4f4f4f;
+}
+.post--contents {
+  color: #333;
+}
+/* button */
+.btn {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.172;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+}
+.btn--grin {
+  background: #27ae60;
+}
+.btn--red {
+  background: #eb5757;
+}
+.btn--blue {
+  padding: 10px 25px;
+  border-radius: 13px;
+  background: #2f80ed;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.center-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+}
+.circle {
+  border-radius: 50%;
+}
+/* User Info */
+.card__user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card__user-info img:first-child {
+  width: 39px;
+  margin-right: 11px;
+}
+.card__user-info > :nth-child(2) {
+  flex-grow: 1;
+}
+.card__user-info .user-info__state h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.card__user-info .user-info__state p {
+  color: #828282;
+}
+.card__user-info img:last-child {
+  margin-left: 11px;
+}
+/* User Info - social version */
+.card__user-info--social {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 17.5px;
+}
+/* avatar */
+.card__user-info--social .user-info__avatar {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.card__user-info--social .user-info__avatar img {
+  width: 27px;
+  margin-right: 3px;
+}
+.card__user-info--social h3 {
+  font-weight: 700;
+}
+/* social */
+.card__user-info--social .user-info__social-action {
+  display: flex;
+  font-weight: 500;
+}
+.card__user-info--social .user-info__social-action .socail__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 5px;
+}
+.card__user-info--social .user-info__social-action .socail__icon img {
+  width: 20px;
+  margin-right: 2px;
+}
+/* Post Info */
+.card__post_info {
+  padding: 12px 15.5px;
+}
+.card__post_info > *:not(:first-child) {
+  margin-top: 5px;
+}
 
-/* 공통요소 */
+/* Title */
+.card__title {
+  padding: 10px;
+}
+.card__title > *:not(:first-child) {
+  margin-top: 5px;
+}
 
-/* card 기본형 */
+/* action bar */
+/* menu */
+.card__action-bar .action-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__action-bar .action-menu .action-menu--group {
+  display: flex;
+  justify-content: space-between;
+  width: 234px;
+  padding: 10px 23px;
+}
+.action-menu--group img {
+  width: 24px;
+}
+.card__action-bar .action-menu::after {
+  content: "";
+  display: block;
+  width: 271px;
+  margin: 2px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.card__action-bar .comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 24px 7px 21px;
+}
+.card__action-bar .comment img {
+  width: 24px;
+  margin-right: 13px;
+}
+.card__action-bar .comment input {
+  display: block;
+  outline: none;
+  padding: 6px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+}
+.card__action-bar .comment input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.172;
+  opacity: 1;
+  color: #bdbdbd;
+}
 
-/* card avata */
+/* comment */
 
-/* card avata top */
+/* EXCEPTION */
+/* card1 */
+.card1--container .card__title .post--title {
+  margin-top: 8px;
+}
+.card1--container .card:first-child > div:first-child {
+  overflow: hidden;
+  height: 220px;
+}
+.card1--container .card:first-child > div:first-child > img {
+  width: 280px;
+}
+.card1--container > :nth-child(2) {
+  position: relative;
+}
+.card1--container .center-box {
+  bottom: 0;
+  left: 0;
+  height: 111px;
+}
+/* card2 */
+.card2--container .card:first-child .center-box {
+  position: relative;
+  height: 303px;
+}
+.card2--container .card:first-child .center-box > img {
+  position: absolute;
+  top: 17.5px;
+  right: 12px;
+}
+.card2--container .center-box .card__user-image img {
+  width: 103px;
+  margin-bottom: 6px;
+}
+.card2--container .center-box .card__user-image h3 {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card2--container .card__user-play > .center-box {
+  position: relative;
+  flex-direction: column;
+  padding: 44px 0 31px 0;
+}
+.card2--container .card__user-play > .center-box .circle {
+  position: absolute;
+  top: -29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 59px;
+  background: #27ae60;
+}
+.card2--container .card__user-play > .center-box h4 {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.card2--container .card__user-play > .center-box p {
+}

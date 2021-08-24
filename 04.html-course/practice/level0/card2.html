@@ -1,14 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card2</title>
-    <link href="css/card2.css" rel="stylesheet" media="all" />
-</head>
-<body>
-    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reset CDN + modification -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- style -->
+    <link href="./css/card2.css" rel="stylesheet" media="all" />
+  </head>
 
-    
-</body>
+  <body>
+    <!-- Card1 -->
+    <div class="card1--container">
+      <div class="card">
+        <div><img src="./images/image2.png" alt="default image" /></div>
+        <div class="card__title">
+          <button class="btn btn--red" name="sele" type="button">-30%</button>
+          <h2 class="post--title">Planta Minimalista</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__title">
+          <button class="btn btn--red" name="sale" type="button">
+            -30% SALE
+          </button>
+          <h2 class="post--title">Super Books</h2>
+          <h4 class="post--author">by Diseño Constructivo</h4>
+        </div>
+        <img src="./images/image5.jpg" alt="default image" />
+        <div class="center-box">
+          <button class="btn btn--blue" name="btn" type="button">
+            Comprar ahora
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__user-info">
+          <img src="./images/Avatar4.png" alt="user image" />
+          <div class="user-info__state">
+            <h3>Stuar Manson</h3>
+            <p>Publicado hace 2 horas</p>
+          </div>
+          <img src="./images/icon-menu.svg" alt="menu" />
+        </div>
+        <img src="./images/image3.png" alt="default image" />
+        <div class="card__post_info">
+          <h2 class="post--title">Flores</h2>
+          <h4 class="post--author">by Stuar Manson</h4>
+          <p class="post--contents">
+            Lorem ipsum carrots, enhanced undergraduate developer, but they do
+            occaecat time and vitality, Lorem ipsum carrots, enhanced
+            undergraduate developer, but they do occaecat time and vitality
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card2--container">
+      <div class="card">
+        <div class="center-box">
+          <img src="./images/icon-menu.svg" alt="menu" />
+          <div class="card__user-image">
+            <img src="./images/Avatar3.png" alt="user image" />
+            <h3>Teodoro Luck</h3>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__user-info">
+          <img src="./images/Avatar4.png" alt="user image" />
+          <div class="user-info__state">
+            <h3>Stuar Manson</h3>
+            <p>Publicado hace 2 horas</p>
+          </div>
+          <img src="./images/icon-menu.svg" alt="menu" />
+        </div>
+        <img src="./images/image3.png" alt="default image" />
+        <div class="card__action-bar">
+          <div class="action-menu">
+            <div class="action-menu--group">
+              <img src="./images/icon-thumbs-up.svg" alt="" />
+              <img src="./images/message-circle.svg" alt="" />
+              <img src="./images/icon-arrow.svg" alt="" />
+            </div>
+          </div>
+          <form class="comment" autocomplete="off" action="javascript:void(0)">
+            <img src="./images/Avatar2.png" alt="" />
+            <input
+              type="text"
+              name="comment"
+              placeholder="Enter your comment"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/Image4.png" alt="default image" />
+        <div class="card__user-play">
+          <div class="center-box">
+            <div class="circle">
+              <img src="./images/icon-play.svg" alt="" />
+            </div>
+            <h4>Meditaciones en casa</h4>
+            <p>Susan Paz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card3--container">
+      <div class="card">
+        <img src="./images/Image1.png" alt="default image" />
+        <!-- User Info -->
+        <div class="card__user-info--social">
+          <div class="user-info__avatar">
+            <img src="./images/Avatar.png" alt="user image" />
+            <h3>Felipe Sacudon</h3>
+          </div>
+          <div class="user-info__social-action">
+            <div class="socail__icon">
+              <img src="./images/message-circle.svg" alt="message-circle" />
+              <span>22</span>
+            </div>
+            <div class="socail__icon">
+              <img src="./images/heart.svg" alt="like heart" />
+              <span>22</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/Image1.png" alt="default image" />
+        <!-- Post Info -->
+        <div class="card__post_info">
+          <h2 class="post--title">El poder de la lampara</h2>
+          <h4 class="post--author">by John Smith</h4>
+          <p class="post--contents">
+            Lorem ipsum carrots, enhanced undergraduate developer, but they do
+            occaecat time and vitality, Lorem ipsum carrots, enhanced
+            undergraduate developer, but they do occaecat time and vitality
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- Title -->
+        <div class="card__title">
+          <button class="btn btn--grin" name="Home" type="button">Home</button>
+          <h2 class="post--title">Lampara Look</h2>
+          <h4 class="post--author">by Saca Tuerca</h4>
+        </div>
+        <img src="./images/Image1.png" alt="default image" />
+        <!-- User Info -->
+        <div class="card__user-info--social">
+          <div class="user-info__avatar">
+            <img src="./images/Avatar.png" alt="user image" />
+            <h3>Felipe Sacudon</h3>
+          </div>
+          <div class="user-info__social-action">
+            <div class="socail__icon">
+              <img src="./images/message-circle.svg" alt="message-circle" />
+              <span>22</span>
+            </div>
+            <div class="socail__icon">
+              <img src="./images/heart.svg" alt="like heart" />
+              <span>22</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
