@@ -9,7 +9,7 @@
   max-width: 1000px;
   margin: 0 auto;
   background: #ededed;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   line-height: 1.172;
 }
@@ -27,7 +27,7 @@ img {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .card > img {
-  width: 280px;
+  width: 100%;
 }
 /* post font */
 .post--title {
@@ -43,13 +43,14 @@ img {
 }
 /* button */
 .btn {
-  padding: 5px 10px;
+  padding: 5px 10px 4px 10px;
   border-radius: 8px;
   border: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.172;
   font-size: 10px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #fff;
 }
 .btn--grin {
@@ -117,6 +118,7 @@ img {
   margin-right: 3px;
 }
 .card__user-info--social h3 {
+  margin-top: 1px;
   font-weight: 700;
 }
 /* social */
@@ -124,13 +126,17 @@ img {
   display: flex;
   font-weight: 500;
 }
-.card__user-info--social .user-info__social-action .socail__icon {
+.card__user-info--social .user-info__social-action .social__icon {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2px 5px;
+  cursor: pointer;
 }
-.card__user-info--social .user-info__social-action .socail__icon img {
+.card__user-info--social .user-info__social-action .social__icon:first-child {
+  margin-right: 3px;
+}
+.card__user-info--social .user-info__social-action .social__icon img {
   width: 20px;
   margin-right: 2px;
 }
@@ -165,14 +171,16 @@ img {
 }
 .action-menu--group img {
   width: 24px;
+  cursor: pointer;
 }
 .card__action-bar .action-menu::after {
-  content: "";
+  content: '';
   display: block;
   width: 271px;
   margin: 2px 0;
   border-bottom: 1px solid #f2f2f2;
 }
+/* comment */
 .card__action-bar .comment {
   display: flex;
   justify-content: space-between;
@@ -191,15 +199,13 @@ img {
   border-radius: 16px;
 }
 .card__action-bar .comment input::placeholder {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 1.172;
   opacity: 1;
   color: #bdbdbd;
 }
-
-/* comment */
 
 /* EXCEPTION */
 /* card1 */
@@ -257,10 +263,11 @@ img {
   height: 59px;
   background: #27ae60;
 }
+.card2--container .card__user-play > .center-box .circle img {
+  margin-left: 5px;
+}
 .card2--container .card__user-play > .center-box h4 {
   margin-bottom: 6px;
   font-size: 14px;
   font-weight: 500;
-}
-.card2--container .card__user-play > .center-box p {
 }
