@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <title>Product list</title>
+    <style>
+      /* common */
+      img {
+        display: block;
+      }
+      .clear-fix::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .container {
+        width: fit-content;
+        margin: 50px auto;
+      }
+      /* Tab menu */
+      nav ul li {
+        float: left;
+        margin-right: 1px;
+        border-radius: 10px 10px 0 0;
+        background: #faca48;
+        font-weight: 600;
+        color: #f17b33;
+      }
+      nav ul li:hover {
+        background: #f17b33;
+        color: #faca48;
+      }
+      nav ul li a {
+        display: block;
+        padding: 10px 30px;
+        font-weight: 600;
+        color: #f17b33;
+      }
+      nav ul li:hover a {
+        color: #faca48;
+      }
+
+      /* Product list */
+      main ul {
+        width: 700px;
+        padding: 20px;
+        border: 1px solid #000;
+      }
+      main ul li {
+        float: left;
+        position: relative;
+        width: 200px;
+        height: 230px;
+        padding: 10px;
+        margin: 20px 20px 0 0;
+        background: #ededed;
+      }
+      main ul li:nth-child(1),
+      main ul li:nth-child(2),
+      main ul li:nth-child(3) {
+        margin-top: 0;
+      }
+      main ul li:nth-child(3n) {
+        margin-right: 0;
+      }
+      main ul li p {
+        position: absolute;
+        bottom: 10px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul class="clear-fix">
+          <li><a href="javascript:void(o)"> 학교</a></li>
+          <li><a href="javascript:void(o)"> 병원</a></li>
+          <li><a href="javascript:void(o)"> 동사무소</a></li>
+          <li><a href="javascript:void(o)"> 우리집</a></li>
+        </ul>
+      </nav>
+      <main>
+        <ul class="clear-fix">
+          <li>
+            <img src="http://placehold.it/200x150" alt="" />
+            <p>wuix</p>
+          </li>
+          <li>
+            <img src="http://placehold.it/200x150" alt="" />
+            <p>wuix</p>
+          </li>
+          <li>
+            <img src="http://placehold.it/200x150" alt="" />
+            <p>wuix</p>
+          </li>
+          <li>
+            <img src="http://placehold.it/200x120" alt="" />
+            <p>wuix</p>
+          </li>
+          <li>
+            <img src="http://placehold.it/200x150" alt="" />
+            <p>wuix</p>
+          </li>
+          <li>
+            <img src="http://placehold.it/200x150" alt="" />
+            <p>wuix</p>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>

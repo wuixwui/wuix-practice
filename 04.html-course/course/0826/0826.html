@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Wired</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <style type="text/css">
+      body {
+        margin: 40px;
+      }
+      .clear-fix::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .grand-mother {
+        width: 670px;
+        border: 2px solid #000;
+        padding: 20px;
+      }
+      .mother {
+        width: 270px;
+        padding: 20px;
+        border: 2px solid lime;
+        margin-bottom: 20px;
+        float: left;
+      }
+      .mother:nth-child(2) {
+        float: right;
+      }
+      .mother .photo {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        border: 10px solid lime;
+        float: left;
+      }
+      .bottom {
+        padding: 20px;
+        border: 1px solid #000;
+        clear: both;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grand-mother">
+      <div class="mother">
+        <div class="photo"></div>
+        <p>LEFT.HTML은 선형적(linearity)입니다.</p>
+      </div>
+      <div class="mother">
+        <div class="photo"></div>
+        <p>LEFT.HTML은 선형적(linearity)입니다.</p>
+      </div>
+      <div class="bottom">LEFT.HTML은 선형적(linearity)입니다.</div>
+    </div>
+  </body>
+</html>

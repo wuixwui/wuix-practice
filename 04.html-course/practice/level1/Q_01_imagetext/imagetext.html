@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="utf-8">
-	<title>hello world!</title>
-	<link rel="stylesheet" media="all" href="" />
-	<style></style>
-	<script></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>hello world!</title>
+    <link rel="stylesheet" media="all" href="./css/reset.css" />
+    <style>
+      .clear-fix::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
 
-</body>
+      .container {
+        margin: 20px;
+        padding: 10px;
+        background-color: #ededed;
+      }
+      .container img {
+        float: left;
+        margin-right: 20px;
+      }
+      .container .text--container {
+        padding: 10px;
+        font-family: cursive;
+      }
+      .container h4 {
+        color: skyblue;
+        font-size: 18px;
+      }
+      .container p {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container clear-fix">
+      <img src="./images/temp_eye.png" alt="eye drawing" />
+      <div class="text--container">
+        <h4>David Lanham</h4>
+        <p>
+          One of my favorite drawing in a while and ir happend to make a great
+          wallpaper for my Iphone's lock screen too :D
+        </p>
+        <h4>Gavin Nelson</h4>
+        <p>your wallpaper are the best, David! thanks for sharing.</p>
+        <h4>Marcel Heymann</h4>
+        <p>
+          The combination of colors here is absolutely stunning. You're ons of a
+          kind,David.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
