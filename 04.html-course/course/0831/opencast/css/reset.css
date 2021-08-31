@@ -67,7 +67,8 @@ a {
   color: inherit;
 }
 strong,
-em {
+em,
+i {
   font-style: normal;
   font-weight: normal;
 }

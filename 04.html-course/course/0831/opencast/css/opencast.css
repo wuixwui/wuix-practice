@@ -4,7 +4,6 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 12px;
 }
-
 /* COMMON */
 .active {
   font-weight: 700;
@@ -12,12 +11,10 @@ body {
 .visible {
   display: block;
 }
-
 /* Opencast */
 .opencast {
   position: relative;
   width: 593px;
-  height: 191px;
   padding: 20px 0 33px;
   border: 1px solid #000;
   background: #fff;
@@ -26,29 +23,32 @@ body {
 .opcast_top {
   padding: 0 15px 11px;
   border-bottom: 1px solid #ededed;
+  margin-bottom: 12px;
 }
-.opcast_top h3 img {
+.opcast_top h3 {
   float: left;
-  margin-right: 8px;
+  height: 12px;
+  margin-right: 10px;
 }
 .opcast_top ul.category {
   display: flow-root;
 }
 .opcast_top ul.category li {
   float: left;
+  height: 12px;
 }
-.opcast_top ul.category li:not(:last-child):after {
+.opcast_top ul.category li:not(:last-child)::after {
   content: '';
-  float: left;
-  display: block;
+  display: inline-block;
   width: 1px;
   height: 10px;
-  margin: 1px 5px 1px 3px;
+  margin: 1px 3px 1px 3px;
   background: #ededed;
 }
 .opcast_top ul.category li a {
-  float: left;
-  line-height: 1;
+  display: inline-block;
+  line-height: 12px;
+  vertical-align: top;
   font-size: 11px;
 }
 .opcast_top ul.category li a:hover {
@@ -87,4 +87,97 @@ body {
 .caslist ul li a:hover {
   color: #1ec800;
   background: #ededed;
+}
+/* Opencast */
+/* Opencast title */
+.opcast_body h4 {
+  display: inline-block;
+  margin-bottom: 9px;
+  font-weight: 700;
+}
+.opcast_body h4 span {
+  float: right;
+  padding-top: 2px;
+  margin-left: 5px;
+  font-size: 10px;
+  color: #999;
+}
+/* Opencast body */
+.opcast_body {
+  display: flow-root;
+  padding: 0 15px 0 16px;
+}
+/* Opencast contents */
+.contlist {
+  float: left;
+}
+.contlist li {
+  float: left;
+  padding: 0 2px;
+}
+.contlist li:not(:last-child) {
+  margin-right: 5px;
+}
+.contlist li a img {
+  width: 100px;
+  height: 60px;
+  margin-bottom: 4px;
+  border: 1px solid #ededed;
+}
+.contlist li a span {
+  font-size: 10px;
+}
+/* line */
+.line {
+  float: left;
+  display: block;
+  width: 1px;
+  height: 77px;
+  margin: 0 10px 0 11px;
+  background: #ededed;
+}
+/* Infoplus */
+.infoplus {
+  float: left;
+}
+.infoplus strong {
+  font-weight: 700;
+  margin-bottom: 1px;
+  color: #1ec800;
+}
+.infoplus span {
+  margin-bottom: 9px;
+}
+/* Page */
+.page {
+  position: absolute;
+  bottom: 11px;
+  right: 16px;
+}
+.page span {
+  float: left;
+  margin-right: 7px;
+  line-height: 19px;
+  font-size: 10px;
+}
+.page-arrow {
+  float: left;
+  width: 41px;
+  height: 19px;
+  background: center no-repeat url('../images/btn_pagearrow.gif');
+}
+.page-arrow a {
+  float: left;
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  font-size: 10px;
+  color: transparent;
+}
+/* image */
+.opcast_img {
+  position: absolute;
+  top: 47px;
+  left: 46px;
+  opacity: 0.3;
 }
