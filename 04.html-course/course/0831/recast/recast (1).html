@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>recast</title>
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<!-- <link rel="stylesheet" type="text/css" media="all" href="css/recast.css" /> -->
+<style type="text/css">
+body {padding:30px}
+.re_cast {position:relative; height:249px; border:1px solid black; padding:10px 10px 8px 10px; width:755px; letter-spacing: -1px;}
+.re_cast > h3 {border-bottom: 2px solid #454545; margin-bottom:21px; padding:0 0 10px 12px}
+/* .re_cast > .cont {overflow: hidden;} */
+.re_cast > .cont > ul {float:left}
+.re_cast > .cont > ul > li {}
+.re_cast > .cont > ul > li::after {
+    content:'';
+    border:1px solid blue;
+    display: block;
+    clear:both;
+}
+.re_cast > .cont > ul > li > a > * {display:block;}
+.re_cast > .cont > ul > li > a > img {border:1px solid #e4e4e4; padding:3px; float:left;}
+.re_cast > .cont > ul > li > a > strong {color:black}
+.re_cast > .cont > ul > li > a > em {color:#999}
+.re_cast > .cont > ul.left {padding:0 23px; width:394px;}
+.re_cast > .cont > ul.left > li + li {margin-top:22px}
+.re_cast > .cont > ul.left a > img {margin-right:14px;}
+.re_cast > .cont > ul.left a > strong {margin:0 0 2px; padding-top:6px}
+.re_cast > .cont > ul.left a > span {margin-top:7px}
+.re_cast > .cont > ul.right {border-left:1px solid #999; padding:0 18px; width:278px;}
+.re_cast > .cont > ul.right > li + li {margin-top:18px}
+.re_cast > .cont > ul.right a > img {margin-right:10px;}
+.re_cast > .cont > ul.right a > strong {padding-top:2px; margin-bottom:5px}
+.re_cast > .cont > ul.right a > em {line-height:13px;}
+.re_cast > .page {
+    position: absolute;
+    right:28px;
+    top:13px;
+}
+.re_cast > .page > * {float:left;}
+.re_cast > .page > span {margin-right:7px; font-family: tahoma; font-size:10px; font-weight:bold;}
+.re_cast > .page > .next {margin-left:-1px;}
+</style>
+</head>
+<!--  
+1. 보더를 긋는다.
+2. 넓이 높이 패딩 마진, 간격
+3. 디테일 타이포 색
+4. 플롯, 포지션
+5. 정리
+-->
+
+<body>
+<div class="re_cast">
+	<h3><img src="images/h3_recast.gif" alt="다시읽는 네이버캐스트"/></h3>
+    <div class="cont">
+    	<ul class="left">
+        	<li>
+            	<a href="">
+                	<img src="images/temp_77x77.gif"/>
+                    <strong>김영환 - 나를 잡는 아버지</strong>
+                    <em>[한국문학인] | 단단하고 투명하다</em>
+                    <span>로아티아 전로아티아 전로아티아 전로아티아 전로아티아 전로아티아 전</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/temp_77x77.gif"/>
+                    <strong>김영환 - 나를 잡는 아버지</strong>
+                    <em>[한국문학인] | 단단하고 투명하다</em>
+                    <span>로아티아 전로아티아 전로아티아 전로아티아 전로아티아 전로아티아 전</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="right">
+        	<li>
+            	<a href="">
+                	<img src="images/temp_42x42.gif"/>
+                    <strong>김영환 - 나를 잡는 아버지</strong>
+                    <em>[한국문학인] | 단단하고 투명하다 단단하고 투명하다 단단하고 투명하다</em>
+                </a>
+            </li>
+            <li>
+            	<a href="">
+                	<img src="images/temp_42x42.gif"/>
+                    <strong>김영환 - 나를 잡는 아버지</strong>
+                    <em>[한국문학인] | 단단하고 투명하다 단단하고 투명하다 단단하고 투명하다</em>
+                </a>
+            </li>
+            <li>
+            	<a href="">
+                	<img src="images/temp_42x42.gif"/>
+                    <strong>김영환 - 나를 잡는 아버지</strong>
+                    <em>[한국문학인] | 단단하고 투명하다 단단하고 투명하다 단단하고 투명하다</em>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="page">
+    	<span>1/8</span>
+        <a href=""><img src="images/btn_page_prev.gif" alt="이전"/></a>
+        <a href=""><img src="images/btn_page_next.gif" alt="다음"/></a>
+    </div>
+</div>
+</body>
+</html>
