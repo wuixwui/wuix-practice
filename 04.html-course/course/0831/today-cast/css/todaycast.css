@@ -1,0 +1,92 @@
+/* common */
+body {
+  margin: 50px;
+  background: #ededed;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+img,
+em,
+span,
+strong {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+strong,
+em {
+  font-style: normal;
+}
+.clear-fix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* container */
+.today_cast {
+  position: relative;
+  padding: 10px 10px 8px 10px;
+  width: 755px;
+  background: #fff;
+}
+/* title */
+.today_cast h3 {
+  margin-bottom: 21px;
+  border-bottom: 2px solid #454545;
+}
+.today_cast h3 img {
+  padding: 0px 0 10px 12px;
+}
+
+/* post */
+.today_cast ul {
+  padding: 0px 21px 0px 23px;
+}
+.today_cast ul li {
+  display: block;
+  float: left;
+  width: 127px;
+  height: 124px;
+}
+.today_cast ul li:not(:last-child) {
+  margin-right: 19px;
+}
+.today_cast ul li img {
+  padding: 3px;
+  margin-bottom: 5px;
+  border: 1px solid #ededed;
+}
+.today_cast ul li strong {
+  color: #222;
+}
+.today_cast ul li strong,
+.today_cast ul li em,
+.today_cast ul li span {
+  padding: 0 3px;
+}
+
+/* page nav */
+.page {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
+.page > * {
+  float: left;
+}
+.page span {
+  margin-right: 6px;
+  line-height: 16px;
+  font-size: 10px;
+  font-weight: 700;
+}
+.page .next {
+  margin-left: -1px;
+}
+.cast_img {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  opacity: 30%;
+}
