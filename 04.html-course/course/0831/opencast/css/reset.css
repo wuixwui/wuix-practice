@@ -4,8 +4,6 @@ html {
   font-size: 100%;
 }
 body {
-  font: normal 12px '애플고딕', AppleGothic, '돋움', dotum, Arial, Verdana,
-    sans-serif;
   line-height: 1.3;
   color: #666666;
   background-color: #fff;
@@ -19,6 +17,8 @@ h4,
 h5,
 h6 {
   font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
 }
 h1,
 h2,
@@ -69,4 +69,5 @@ a {
 strong,
 em {
   font-style: normal;
+  font-weight: normal;
 }
