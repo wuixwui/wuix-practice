@@ -1,0 +1,185 @@
+body {
+  margin: 50px;
+  background: #ededed;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 12px;
+}
+/* COMMON */
+.active {
+  font-weight: 700;
+}
+/* Opencast */
+.opencast {
+  position: relative;
+  width: 593px;
+  padding: 20px 0 33px;
+  border: 1px solid #000;
+  background: #fff;
+}
+/* Opencast_top */
+.opcast_top {
+  padding: 0 15px 11px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 12px;
+}
+.opcast_top h3 {
+  float: left;
+  height: 12px;
+  margin-right: 10px;
+}
+.opcast_top ul.category {
+  display: flow-root;
+}
+.opcast_top ul.category li {
+  float: left;
+  font-size: 10px;
+  line-height: 1;
+}
+.opcast_top ul.category li:not(:last-child)::after {
+  content: '';
+  float: left;
+  width: 1px;
+  height: 10px;
+  margin: 1px 3px 1px 3px;
+  background: #ededed;
+}
+.opcast_top ul.category li a {
+  float: left;
+}
+.opcast_top ul.category li a:hover {
+  text-decoration: underline;
+}
+/* Castlist */
+.caslist {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  right: 15px;
+  width: 111px;
+  height: 22px;
+  border: 1px solid #ededed;
+}
+.caslist a {
+  display: block;
+  padding: 5px 8px;
+  line-height: 1;
+}
+.caslist a.btn::after {
+  content: '';
+  float: right;
+  display: block;
+  width: 5px;
+  height: 12px;
+  background: center no-repeat url('../images/bul_down.gif');
+}
+.caslist ul {
+  position: absolute;
+  overflow: hidden;
+  top: 100%;
+  left: -1px;
+  width: 100%;
+  height: 0;
+  border: 1px solid #ededed;
+  background: #fff;
+  transition: height 0.3s ease;
+}
+.caslist.on ul {
+  overflow: auto;
+  height: 120px;
+}
+.caslist ul li a:hover {
+  color: #1ec800;
+  background: #ededed;
+}
+/* Opencast */
+/* Opencast title */
+.opcast_body h4 {
+  display: inline-block;
+  margin-bottom: 9px;
+  font-weight: 700;
+}
+.opcast_body h4 span {
+  float: right;
+  padding-top: 2px;
+  margin-left: 5px;
+  font-size: 10px;
+  color: #999;
+}
+/* Opencast body */
+.opcast_body {
+  display: flow-root;
+  padding: 0 15px 0 16px;
+}
+/* Opencast contents */
+.contlist {
+  float: left;
+}
+.contlist li {
+  float: left;
+  padding: 0 2px;
+}
+.contlist li:not(:last-child) {
+  margin-right: 5px;
+}
+.contlist li a img {
+  width: 100px;
+  height: 60px;
+  margin-bottom: 4px;
+  border: 1px solid #ededed;
+}
+.contlist li a span {
+  font-size: 10px;
+}
+/* line */
+.line {
+  float: left;
+  display: block;
+  width: 1px;
+  height: 77px;
+  margin: 0 10px 0 11px;
+  background: #ededed;
+}
+/* Infoplus */
+.infoplus {
+  float: left;
+}
+.infoplus strong {
+  font-weight: 700;
+  margin-bottom: 1px;
+  color: #1ec800;
+}
+.infoplus span {
+  margin-bottom: 9px;
+}
+/* Page */
+.page {
+  position: absolute;
+  bottom: 11px;
+  right: 16px;
+}
+.page span {
+  float: left;
+  margin-right: 7px;
+  line-height: 19px;
+  font-size: 10px;
+}
+
+.page a {
+  float: left;
+  display: inline-block;
+  background: no-repeat url('../images/btn_pagearrow.gif');
+  background-position: 0 0;
+  width: 21px;
+  height: 19px;
+  text-indent: -9999px;
+}
+.page a:last-child {
+  background-position: 100% 0;
+}
+/* image */
+.opcast_img {
+  position: absolute;
+  top: 47px;
+  left: 46px;
+  opacity: 0.3;
+}
