@@ -35,21 +35,19 @@ body {
 }
 .opcast_top ul.category li {
   float: left;
-  height: 12px;
+  font-size: 10px;
+  line-height: 1;
 }
 .opcast_top ul.category li:not(:last-child)::after {
   content: '';
-  display: inline-block;
+  float: left;
   width: 1px;
   height: 10px;
   margin: 1px 3px 1px 3px;
   background: #ededed;
 }
 .opcast_top ul.category li a {
-  display: inline-block;
-  line-height: 12px;
-  vertical-align: top;
-  font-size: 11px;
+  float: left;
 }
 .opcast_top ul.category li a:hover {
   text-decoration: underline;
