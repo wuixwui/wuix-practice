@@ -7,9 +7,10 @@
   margin: 0 auto;
   border: 0.5px solid #000;
 }
+
 /* layout */
 body {
-  background: #f2f2f2;
+  font-family: 'Nanum Gothic', sans-serif;
   color: #333;
 }
 .container {
@@ -19,14 +20,14 @@ body {
 }
 /* header */
 header {
-  background: #5095bf;
+  background: #1ec800;
 }
 header .content-default {
   height: 119px;
 }
 /* aside */
 aside {
-  background: #5da684;
+  background: #f1f2f3;
 }
 aside .content-default {
   height: 135px;
@@ -41,25 +42,24 @@ main .breadcrumbs {
   right: 0;
   width: 200px;
   height: 30px;
-  background: #f2f2f2;
+  background: #1ec800;
 }
 main .sub-menu {
   float: left;
   width: 120px;
   height: 500px;
-  background: #91bf4b;
+  background: #1ec800;
 }
 main .contents {
   float: right;
   width: 760px;
-  height: 500px;
   margin-left: 60px;
-  background: #91bf4b;
+  background: #fff;
 }
 /* footer */
 footer {
   clear: both;
-  background: #98bf5e;
+  background: #f1f2f3;
 }
 footer .content-default {
   height: 130px;
@@ -73,8 +73,70 @@ footer .content-default {
 
 /* footer */
 
-/* contents common */
+/* contents */
+.contents {
+  padding: 74px 0 104px;
+  font-size: 13px;
+}
+/* content */
 
+.slogan {
+  margin-top: 20px;
+}
+/* first content */
+.content:nth-child(2) {
+  padding-top: 35px;
+  border-top: 1px solid #999;
+}
+.col-container::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.content:first-child > .col-container {
+  padding: 37px 0 92px;
+}
+.content:nth-child(2) > .col-container {
+  padding: 39px 0 32px;
+}
+.link_banner li:first-child {
+  border-top: 2px solid #1ec800;
+}
+/* col */
+.col {
+  float: left;
+  width: 235px;
+  line-height: 1.7;
+  /* border: 0.1px solid #000; */
+}
+.col:last-child {
+  position: relative;
+  width: 215px;
+}
+
+.col:not(:last-child) {
+  margin-right: 37px;
+}
+.col p:not(:last-child) {
+  margin-bottom: 28px;
+}
+.banner {
+  position: absolute;
+  text-align: right;
+  top: 21px;
+  right: -8px;
+}
+.banner img {
+  float: right;
+}
+.banner img:first-child {
+  margin-top: 22px;
+}
+/* visual */
+.visual {
+  position: relative;
+  left: -180px;
+}
 /* board */
 
 /* 채용 > 입사지원 > 공지사항 */
