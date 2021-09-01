@@ -1,0 +1,53 @@
+body {
+  background: #888;
+  color: #000;
+}
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.inner {
+  width: 940px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+header .inner {
+  height: 119px;
+}
+aside {
+}
+aside div {
+  height: 135px;
+}
+main {
+  position: relative;
+}
+main .breadcrumbs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 30px;
+  background: #444;
+}
+main .left {
+  float: left;
+  width: 120px;
+  height: 500px;
+  background: #555;
+}
+main .content {
+  float: right;
+  width: 760px;
+  height: 500px;
+  margin-left: 60px;
+  background: #666;
+}
+footer {
+  clear: both;
+  background: #777;
+}
+footer .inner {
+  height: 130px;
+}
