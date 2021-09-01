@@ -57,6 +57,7 @@ body {
 /* Castlist */
 .caslist {
   position: absolute;
+  z-index: 1;
   top: 14px;
   right: 15px;
   width: 111px;
@@ -83,6 +84,7 @@ body {
   left: -1px;
   width: 100%;
   border: 1px solid #ededed;
+  background: #fff;
 }
 .caslist ul li a:hover {
   color: #1ec800;
@@ -160,19 +162,18 @@ body {
   line-height: 19px;
   font-size: 10px;
 }
-.page-arrow {
-  float: left;
-  width: 41px;
-  height: 19px;
-  background: center no-repeat url('../images/btn_pagearrow.gif');
-}
-.page-arrow a {
+
+.page a {
   float: left;
   display: inline-block;
-  width: 20px;
+  background: no-repeat url('../images/btn_pagearrow.gif');
+  background-position: 0 0;
+  width: 21px;
   height: 19px;
-  font-size: 10px;
-  color: transparent;
+  text-indent: -9999px;
+}
+.page a:last-child {
+  background-position: 100% 0;
 }
 /* image */
 .opcast_img {
