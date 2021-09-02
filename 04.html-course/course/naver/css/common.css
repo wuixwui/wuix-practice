@@ -1,6 +1,22 @@
 @charset "utf-8";
 /* reset */
+/* 기본적인 타이포 베이스는 reset에 넣어주는 경우가 많다. */
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #333;
+}
+
 /* global setting */
+/* typogrphy */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+em {
+}
+
 /* common property */
 .content-default {
   max-width: 940px;
@@ -9,10 +25,7 @@
 }
 
 /* layout */
-body {
-  font-family: 'Nanum Gothic', sans-serif;
-  color: #333;
-}
+
 .container {
   position: relative;
   width: 100%;
@@ -20,7 +33,7 @@ body {
 }
 /* header */
 header {
-  background: #1ec800;
+  background: #2db400;
 }
 header .content-default {
   height: 119px;
@@ -42,13 +55,13 @@ main .breadcrumbs {
   right: 0;
   width: 200px;
   height: 30px;
-  background: #1ec800;
+  background: #2db400;
 }
 main .sub-menu {
   float: left;
   width: 120px;
   height: 500px;
-  background: #1ec800;
+  background: #2db400;
 }
 main .contents {
   float: right;
@@ -74,68 +87,157 @@ footer .content-default {
 /* footer */
 
 /* contents */
-.contents {
-  padding: 74px 0 104px;
-  font-size: 13px;
-}
-/* content */
-
+/* content common */
 .slogan {
   margin-top: 20px;
 }
-/* first content */
-.content:nth-child(2) {
-  padding-top: 35px;
-  border-top: 1px solid #999;
+.content:first-child {
+  border-bottom: 1px solid #e1e1e1;
 }
 .col-container::after {
   content: '';
   display: block;
   clear: both;
 }
-.content:first-child > .col-container {
-  padding: 37px 0 92px;
-}
-.content:nth-child(2) > .col-container {
-  padding: 39px 0 32px;
-}
-.link_banner li:first-child {
-  border-top: 2px solid #1ec800;
-}
-/* col */
 .col {
   float: left;
-  width: 235px;
-  line-height: 1.7;
   /* border: 0.1px solid #000; */
 }
-.col:last-child {
+
+/* naver about */
+.contents.naver11 {
+  padding: 74px 0 104px;
+}
+/* content */
+.content:first-child {
+  margin-bottom: 35px;
+}
+.naver11 .content:first-child > .col-container {
+  padding: 37px 0 92px;
+}
+.naver11 .content:nth-child(2) > .col-container {
+  padding: 39px 0 32px;
+}
+.naver11 .link_banner li:first-child {
+  border-top: 2px solid #2db400;
+}
+/* col */
+.naver11 .col {
+  width: 235px;
+}
+.naver11 .col:last-child {
   position: relative;
   width: 215px;
 }
 
-.col:not(:last-child) {
+.naver11 .col:not(:last-child) {
   margin-right: 37px;
 }
-.col p:not(:last-child) {
+.naver11 .col p:not(:last-child) {
   margin-bottom: 28px;
 }
-.banner {
+.naver11 .banner {
   position: absolute;
   text-align: right;
   top: 21px;
   right: -8px;
 }
-.banner img {
+.naver11 .banner img {
   float: right;
 }
-.banner img:first-child {
+.naver11 .banner img:first-child {
   margin-top: 22px;
 }
 /* visual */
-.visual {
+.naver11 .visual {
   position: relative;
   left: -180px;
+}
+
+/* 네이버 소개 */
+.contents.naver71 {
+  padding: 69px 0 106px;
+}
+/* content */
+.naver71 .content:first-child {
+  margin-bottom: 38px;
+}
+.naver71 .col-container {
+  position: relative;
+  margin-top: 51px;
+}
+/* col */
+.naver71 .col {
+  width: 240px;
+}
+.naver71 .col > ul {
+  padding: 5px;
+}
+.naver71 .col > p {
+  padding: 8px 5px;
+}
+.naver71 .col > ul li {
+  position: relative;
+  padding-left: 8px;
+}
+.naver71 .col ul > li::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  border: 1px solid #000;
+}
+.naver71 .col .pro_btn {
+  position: absolute;
+  bottom: 10px;
+  left: auto;
+}
+.naver71 .col:not(:last-child) {
+  margin-right: 20px;
+}
+/* pocess */
+.naver71 .process h4 + img {
+  margin-top: 21px;
+}
+.naver71 ol {
+  position: relative;
+  height: 330px;
+  margin-top: 31px;
+}
+.naver71 ol > li {
+  position: absolute;
+  width: 380px;
+}
+.naver71 ol > li.num1 {
+  top: 0;
+  left: 0;
+}
+.naver71 ol > li.num2 {
+  top: 150px;
+  left: 0;
+}
+.naver71 ol > li.num3 {
+  top: 0;
+  right: 0;
+}
+.naver71 ol > li.num4 {
+  bottom: 0;
+  right: 0;
+}
+
+.naver71 ol > li > ul {
+  padding-left: 45px;
+}
+.naver71 ol > li > ul li {
+  position: relative;
+  padding-left: 8px;
+}
+.naver71 ol > li > ul li::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  border: 1px solid #000;
 }
 /* board */
 
