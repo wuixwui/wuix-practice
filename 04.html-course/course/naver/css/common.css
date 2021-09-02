@@ -29,6 +29,9 @@ a {
   border-top: 2px solid #2db400;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
+.closed {
+  height: 10px;
+}
 
 /* layout */
 .container {
@@ -36,13 +39,7 @@ a {
   width: 100%;
   height: 100%;
 }
-/* aside */
-aside {
-  background: #f1f2f3;
-}
-aside .content-default {
-  height: 135px;
-}
+
 /* main */
 main {
   position: relative;
@@ -78,7 +75,7 @@ footer .content-default {
 /* header */
 header .content-default {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   display: flow-root;
   height: 120px;
 }
@@ -162,6 +159,82 @@ header .util .sub li:not(:last-child) {
 }
 
 /* aside */
+aside {
+  position: relative;
+  z-index: 2;
+  height: 135px;
+  background: #f1f2f3;
+  transition: height 0.3s ease;
+}
+aside .content-default > * {
+  position: relative;
+  height: 135px;
+}
+aside .content-default > *:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: -1px;
+  width: 1px;
+  height: 135px;
+  background: #fff;
+}
+aside .side_col1 {
+  float: left;
+  width: 567px;
+}
+aside .side_col1 .title {
+  position: absolute;
+  top: -17px;
+  left: 0;
+}
+aside .side_col1 .more {
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+aside .side_col1 ul {
+  padding: 15px 20px;
+}
+aside .side_col1 ul li {
+  display: flow-root;
+}
+aside .side_col1 ul li a {
+  float: left;
+}
+aside .side_col1 ul li span {
+  float: right;
+}
+aside .side_col1 ul li a:hover {
+  font-weight: 700;
+}
+aside .side_col2 {
+  float: left;
+  width: 184px;
+  background: url('../images/aside/extra_bg_recruit1.gif');
+}
+aside .side_col3 {
+  float: left;
+  width: 187px;
+  background: url('../images/aside/extra_bg_recruit2.gif');
+}
+aside .side_col2 a,
+aside .side_col3 a {
+  display: block;
+  padding: 10px;
+}
+aside .open {
+  position: absolute;
+  top: 100%;
+  left: 180px;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+}
+aside.closed .content-default {
+  display: none;
+}
 
 /* breadcrumbs */
 
