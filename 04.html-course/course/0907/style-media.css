@@ -1,0 +1,52 @@
+/* 420이하 */
+@media screen and (max-width: 420px) {
+  /* header */
+  header {
+    position: relative;
+  }
+  header.on ul.menu {
+    display: block;
+  }
+  .btn-menu {
+    display: block;
+  }
+  ul.menu {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 50%;
+    min-width: fit-content;
+    height: auto;
+  }
+  ul.menu > li {
+    float: none;
+    width: 100%;
+  }
+  ul.menu > li:not(:nth-child(5n)) {
+    border: none;
+  }
+  ul.menu > li:nth-child(n + 6) {
+    border: none;
+  }
+  /* main */
+  .about ul > li {
+    width: 100%;
+  }
+}
+/* 421이상 768이하 */
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  ul.menu > li {
+    width: calc(100% / 4);
+  }
+  ul.menu > li:not(:nth-child(4n)) {
+    border-right: 2px solid #2e8938;
+  }
+  ul.menu > li:nth-child(n + 5) {
+    border-top: 2px solid #2e8938;
+  }
+  .about ul > li {
+    width: calc(100% / 3);
+  }
+}

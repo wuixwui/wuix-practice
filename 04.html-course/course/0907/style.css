@@ -1,0 +1,162 @@
+/* reset */
+body {
+  margin: 0;
+  background: #2e8938;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+}
+button {
+  display: block;
+  padding: 0;
+  cursor: pointer;
+}
+/* container */
+.page {
+  width: 90.196%; /* 920 / 1020 */
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  background: #32459c;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+/* header */
+/* box-sizing: border-box를 사용하면 쉽게 처리가 가능하다. */
+/* 그러나 그렇게 된다면 border-right가 없는 list는 크기에서 약간의 차이가 발생한다. */
+.btn-menu {
+  z-index: 2;
+  position: relative;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #2e8938;
+  color: #fff;
+}
+ul.menu {
+  overflow: hidden;
+  width: 54.1304%; /* 498 / 920 */
+  min-width: 300px;
+  margin: 0 auto;
+  border: 1px solid #2e8938;
+  border-radius: 10px;
+}
+
+ul.menu > li {
+  box-sizing: border-box;
+  float: left;
+  width: calc(100% / 5);
+}
+ul.menu > li:not(:nth-child(5n)) {
+  border-right: 2px solid #2e8938;
+}
+ul.menu > li:nth-child(n + 6) {
+  border-top: 2px solid #2e8938;
+}
+ul.menu > li a {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding: 0 10px;
+  line-height: 50px;
+  background: #fff;
+  color: #2e8938;
+  cursor: pointer;
+}
+ul.menu > li a:hover {
+  background: #2e8938;
+  color: #fff;
+}
+/* main */
+main {
+  overflow: hidden;
+  margin: 20px auto 0;
+  background: #fff;
+  border-radius: 10px;
+}
+.product {
+  padding: 26px 36px;
+  margin: 0 auto;
+  background: #c93a6a;
+}
+.product::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.product .box {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 23.148%;
+  padding-top: 23.148%;
+  background: #fff;
+}
+.product .box:not(:last-child) {
+  margin-right: 2.4691%;
+}
+
+.product .box img {
+  min-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* about */
+.about ul {
+  /* 패딩 값만큼 (좌우 합친) 넓이 100%에 더해준다. */
+  width: calc(100% + 4px);
+  transform: translateX(-2px);
+}
+.about ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.about ul > li {
+  float: left;
+  /* border 박스여야 하는 이유는 padding을 포함해서 25% 여야하기 때문 */
+  box-sizing: border-box;
+  /* 이미지의 사이즈를 결정 */
+  width: 25%;
+  padding: 10px 2px;
+  background: #e9acc4;
+}
+/* 이미지의 크기를 맞추는 container */
+.about ul > li .img-con {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  /* 이미지의 비율을 설정 */
+  padding-top: 80%;
+}
+.about ul > li img {
+  /* 이미지 가운데 조정 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 사이즈는 긴 길이 기준으로 100% */
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+/* about2 */
+.about2 ul > li {
+  width: calc(100% / 2);
+}
+/* about3 */
+.about3 ul > li {
+  width: calc(100% / 3);
+}

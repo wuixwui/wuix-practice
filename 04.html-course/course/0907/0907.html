@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- media query를 위한 코드 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-media.css" />
+    <title>0907</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <button class="btn-menu">menu</button>
+        <ul class="menu"></ul>
+      </header>
+      <!-- script -->
+      <!-- 직접 파일을 가지고 오는 방식 -->
+      <!-- <script src='./data.js'></script> -->
+      <script>
+        // menu button
+        const btn = document.querySelector('.btn-menu');
+        btn.addEventListener('click', () => {
+          btn.parentNode.classList.toggle('on');
+        });
+
+        //menu list
+        const menu = document.querySelector('.menu');
+        const url = 'https://jsonplaceholder.typicode.com/users';
+
+        const reqObj = new XMLHttpRequest();
+        reqObj.open('GET', url);
+        reqObj.responseType = 'json';
+        reqObj.send();
+        reqObj.addEventListener('load', work);
+
+        function work() {
+          const tabData = reqObj.response;
+          react(tabData);
+        }
+        function react(data) {
+          for (let i = 0; i < data.length; i++) {
+            const menuList = document.createElement('li'); // li 만들고
+            const listItem = document.createElement('a'); // a 만들고
+            listItem.textContent = data[i].username; // 내용 입력하고
+            menuList.appendChild(listItem); // li에 a 추가하고
+            menu.appendChild(menuList); // li에 a 추가하고
+          }
+        }
+      </script>
+
+      <main>
+        <section class="product">
+          <ul>
+            <li class="box">
+              <img src="./images/gallery_medium.jpg" alt="" />
+            </li>
+            <li class="box">
+              <img src="./images/gallery_medium.jpg" alt="" />
+            </li>
+            <li class="box">
+              <img src="./images/gallery_medium.jpg" alt="" />
+            </li>
+            <li class="box">
+              <img src="./images/gallery_medium.jpg" alt="" />
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <ul>
+            <li class="box">
+              <a class="img-con" href="javascript:void(0)">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+            <li class="box">
+              <a class="img-con">
+                <img src="./images/gallery_medium.jpg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
