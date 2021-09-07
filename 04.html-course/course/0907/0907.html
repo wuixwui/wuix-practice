@@ -25,6 +25,15 @@
           btn.parentNode.classList.toggle('on');
         });
 
+        window.addEventListener('resize', () => {
+          setTimeout(() => {
+            const innerWidth = window.innerWidth;
+            if (innerWidth > 420) {
+              btn.parentNode.classList.remove('on');
+            }
+          }, 1000);
+        });
+
         //menu list
         const menu = document.querySelector('.menu');
         const url = 'https://jsonplaceholder.typicode.com/users';
